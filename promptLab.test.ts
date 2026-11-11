@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { compareResponses, deletePrompt, parsePrompts, scorePrompt, serializePrompts, upsertPrompt, type PromptDraft } from '../src/promptLab'
+import { compareResponses, deletePrompt, parsePrompts, scorePrompt, serializePrompts, upsertPrompt, type PromptDraft } from './promptLab'
 
 const draft = (id: number, title = 'First prompt'): PromptDraft => ({ id, title, promptA: 'Write a clear launch announcement for commuters under 100 words.', promptB: 'Write a launch post.', notes: 'Test note', updated: '2026-11-11T00:00:00.000Z' })
 
